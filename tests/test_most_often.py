@@ -27,3 +27,13 @@ Function returns "no clear winner"
 def test_given_list_with_unique_num_returns_message():
     word_list = MostOften([1,2,3])
     assert word_list.get_most_often() == "no clear winner"
+
+
+"""
+Given a list with recuring numbers
+Function returns the items with highest occurence
+"""
+
+def test_given_list_with_recuring_num_returns_highest_occurence():
+    word_list = MostOften([1,2,3,1,2,2])
+    assert word_list.get_most_often() == 2
