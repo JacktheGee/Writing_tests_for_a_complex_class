@@ -18,3 +18,12 @@ def test_add_new_returns_list_plus_item():
     word_list.add_new(5)
 
     assert word_list.starting_list == [1,2,3,5]
+
+"""
+Given a list with unique numbers
+Function returns "no clear winner"
+"""
+
+def test_given_list_with_unique_num_returns_message():
+    word_list = MostOften([1,2,3])
+    assert word_list.get_most_often() == "no clear winner"
