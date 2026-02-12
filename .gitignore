@@ -1,1 +1,5 @@
 complex_class_test_venv
+
+*venv/
+
+*__pycache__/
