@@ -8,3 +8,13 @@ def test_given_list_returns_same_list():
     word_list = MostOften([1,2,3])
     assert word_list.starting_list == [1,2,3]
 
+"""
+Given a list, add a new item to the list,
+which return the inital list + the new item
+"""
+
+def test_add_new_returns_list_plus_item():
+    word_list = MostOften([1,2,3])
+    word_list.add_new(5)
+
+    assert word_list.starting_list == [1,2,3,5]
